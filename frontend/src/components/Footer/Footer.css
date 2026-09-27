@@ -1,0 +1,138 @@
+.footer {
+  padding: 65px 0 25px;
+  background: #111827;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-logo {
+  color: white;
+}
+
+.footer-brand > p {
+  max-width: 330px;
+  margin: 20px 0;
+  color: #9ca6b8;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.social-links {
+  display: flex;
+  gap: 9px;
+}
+
+.social-links a {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #202938;
+  color: #c7ceda;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.social-links a:hover {
+  background: #d62828;
+  color: white;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-column h3 {
+  margin: 0 0 8px;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-column a {
+  color: #9ca6b8;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid #252e3d;
+}
+
+.footer-bottom .rights {
+  margin: 0;
+  color: #747e90;
+  font-size: 11px;
+}
+
+@media (max-width: 1000px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .footer-column:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 25px;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+
+  .footer-column:last-child {
+    display: flex;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+}

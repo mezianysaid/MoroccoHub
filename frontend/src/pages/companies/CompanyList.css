@@ -1,0 +1,825 @@
+/* =========================================
+   PAGE
+========================================= */
+
+.company-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #172033;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.company-hero {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at 90% 0%, rgba(220, 38, 38, 0.18), transparent 32%),
+    linear-gradient(135deg, #0f172a 0%, #172033 55%, #111827 100%);
+
+  color: white;
+}
+
+.company-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  right: -180px;
+  bottom: -250px;
+
+  border-radius: 50%;
+
+  background: rgba(220, 38, 38, 0.12);
+
+  filter: blur(80px);
+
+  pointer-events: none;
+}
+
+.company-hero-inner {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 32px 24px 42px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.company-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 30px;
+
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.company-breadcrumb a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.company-breadcrumb a:hover {
+  color: white;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.company-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 28px;
+}
+
+.company-heading-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 62px;
+  height: 62px;
+
+  flex-shrink: 0;
+
+  border-radius: 15px;
+
+  background: rgba(220, 38, 38, 0.15);
+
+  border: 1px solid rgba(248, 113, 113, 0.2);
+
+  color: #f87171;
+}
+
+.company-heading h1 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 38px;
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+}
+
+.company-heading p {
+  margin: 8px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 15px;
+}
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.company-search {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  width: 100%;
+
+  padding: 6px;
+
+  box-sizing: border-box;
+
+  background: white;
+
+  border-radius: 14px;
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================
+   MAIN
+========================================= */
+
+.company-main {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 35px 24px 60px;
+}
+
+.company-layout {
+  display: grid;
+
+  grid-template-columns: 260px 1fr;
+
+  gap: 30px;
+
+  align-items: start;
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.company-sidebar {
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 16px;
+
+  padding: 22px;
+
+  position: sticky;
+
+  top: 90px;
+}
+
+.filter-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  margin-bottom: 20px;
+}
+
+.filter-header h3 {
+  margin: 0;
+
+  font-size: 18px;
+
+  color: #172033;
+}
+
+.filter-header span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+}
+
+.clear-button {
+  border: none;
+
+  background: transparent;
+
+  color: #dc2626;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   FILTER GROUP
+========================================= */
+
+.filter-group {
+  margin-bottom: 25px;
+}
+
+.filter-group label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #334155;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.filter-options {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.filter-options button {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  width: 100%;
+
+  padding: 9px 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.filter-options button:hover {
+  color: #dc2626;
+}
+
+.filter-options button span:last-child {
+  color: #94a3b8;
+}
+
+/* =========================================
+   RESULTS HEADER
+========================================= */
+
+.results-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+
+.results-header h2 {
+  margin: 0;
+
+  font-size: 24px;
+
+  color: #172033;
+}
+
+.results-header p {
+  margin: 5px 0 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+.sort-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+/* =========================================
+   COMPANY GRID
+========================================= */
+
+.company-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+/* =========================================
+   COMPANY CARD
+========================================= */
+
+.company-card {
+  display: flex;
+
+  flex-direction: column;
+
+  min-width: 0;
+
+  padding: 22px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 16px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.company-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #cbd5e1;
+
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.09);
+}
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.company-card-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 17px;
+}
+
+.company-logo {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  border-radius: 13px;
+
+  background: #fff1f2;
+
+  color: #dc2626;
+}
+
+.favorite-button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 10px;
+
+  background: white;
+
+  color: #94a3b8;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.favorite-button:hover {
+  color: #dc2626;
+
+  border-color: #fecaca;
+}
+
+.favorite-button.active {
+  color: #dc2626;
+
+  background: #fff1f2;
+
+  border-color: #fecaca;
+}
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.company-card-title h3 {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 19px;
+
+  font-weight: 700;
+}
+
+.company-card-title span {
+  display: inline-block;
+
+  margin-top: 6px;
+
+  color: #dc2626;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+/* =========================================
+   META
+========================================= */
+
+.company-meta {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin: 17px 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.company-meta > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+.company-rating {
+  color: #64748b;
+}
+
+.company-rating svg {
+  color: #f59e0b;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.company-description {
+  margin: 0 0 18px;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+
+  display: -webkit-box;
+  line-clamp: 2;
+
+  -webkit-line-clamp: 2;
+
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+
+  min-height: 43px;
+}
+
+/* =========================================
+   STATS
+========================================= */
+
+.company-stats {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 15px 0;
+
+  border-top: 1px solid #f1f5f9;
+
+  border-bottom: 1px solid #f1f5f9;
+
+  margin-bottom: 18px;
+}
+
+.company-stats div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.company-stats svg {
+  color: #94a3b8;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.company-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: auto;
+}
+
+.website-button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 55px;
+  height: 55px;
+
+  flex-shrink: 0;
+
+  border-radius: 9px;
+
+  border: 1px solid #e2e8f0;
+
+  color: #64748b;
+
+  background: white;
+
+  text-decoration: none;
+
+  transition: 0.2s ease;
+  padding: 0;
+}
+
+.website-button:hover {
+  color: #172033;
+
+  border-color: #94a3b8;
+
+  background: #f8fafc;
+}
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.empty-state {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 70px 20px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  color: #94a3b8;
+}
+
+.empty-state h3 {
+  margin: 15px 0 5px;
+
+  color: #172033;
+}
+
+.empty-state p {
+  margin: 0 0 20px;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   MOBILE DRAWER
+========================================= */
+
+.mobile-filter {
+  width: 320px;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+}
+
+.mobile-filter-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.mobile-filter-header h3 {
+  margin: 0;
+
+  font-size: 20px;
+}
+
+.mobile-filter-header span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+}
+
+.mobile-filter-header button {
+  display: flex;
+
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 950px) {
+  .company-layout {
+    grid-template-columns: 220px 1fr;
+
+    gap: 20px;
+  }
+
+  .company-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .company-hero-inner {
+    padding: 27px 16px 35px;
+  }
+
+  .company-heading {
+    align-items: flex-start;
+
+    gap: 13px;
+  }
+
+  .company-heading h1 {
+    font-size: 28px;
+  }
+
+  .company-heading p {
+    font-size: 14px;
+  }
+
+  .company-heading-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .company-main {
+    padding: 25px 16px 45px;
+  }
+
+  .company-layout {
+    display: block;
+  }
+
+  .company-sidebar {
+    display: none;
+  }
+
+  .results-header {
+    align-items: flex-start;
+  }
+
+  .sort-box span {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .company-search {
+    padding: 5px;
+  }
+
+  .company-heading h1 {
+    font-size: 24px;
+  }
+
+  .company-heading p {
+    font-size: 13px;
+
+    line-height: 1.5;
+  }
+
+  .results-header {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .sort-box {
+    width: 100%;
+  }
+
+  .sort-box .MuiFormControl-root {
+    width: 100%;
+  }
+
+  .company-card {
+    padding: 18px;
+  }
+
+  .company-meta {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .company-stats {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .mobile-filter {
+    width: 100vw;
+  }
+}
