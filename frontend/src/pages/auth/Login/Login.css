@@ -1,0 +1,284 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f7fb;
+  padding: 30px 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 1000px;
+  min-height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.login-info {
+  background: linear-gradient(135deg, #eae9e9, #f4f3f3);
+  color: #d62828;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.register-message {
+  color: #d62828;
+  text-align: center;
+}
+.logo-i {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: #d62828;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.login-info-content {
+  max-width: 400px;
+  margin-bottom: 80px;
+}
+
+.login-info-content h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.login-info-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #d62828;
+}
+.logo {
+  color: #374151;
+}
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.login-form-container {
+  padding: 55px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form-header {
+  margin-bottom: 30px;
+}
+
+.login-form-header h2 {
+  font-size: 32px;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.login-form-header p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #d62828;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.password-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot-password {
+  border: none;
+  background: none;
+  color: #d62828;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Remember */
+
+.remember-me label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4b5563;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.remember-me input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Login button */
+
+.login-submit {
+  width: 100%;
+  border: none;
+  background: #d62828;
+  color: white;
+  padding: 14px;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-submit:hover {
+  background: #d62828;
+  transform: translateY(-1px);
+}
+
+/* Register */
+
+.register-link {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.register-link button {
+  border: none;
+  background: none;
+  color: #d62828;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.register-link button:hover {
+  text-decoration: underline;
+}
+
+/* Back home */
+
+.back-home {
+  margin-top: 25px;
+  border: none;
+  background: none;
+  color: #6b7280;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.back-home:hover {
+  color: #d62828;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .login-page {
+    padding: 15px;
+  }
+
+  .login-container {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+
+  .login-info {
+    min-height: 250px;
+    padding: 30px;
+  }
+
+  .login-info-content {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .login-info-content h1 {
+    font-size: 30px;
+  }
+
+  .login-info-content p {
+    font-size: 14px;
+  }
+
+  .login-form-container {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-info {
+    padding: 25px;
+  }
+
+  .login-form-container {
+    padding: 30px 20px;
+  }
+
+  .login-form-header h2 {
+    font-size: 28px;
+  }
+}
