@@ -8,7 +8,7 @@ const nextConfig = {
         headers: [
           {
             key: "Access-Control-Allow-Origin",
-            value: "http://localhost:5173",
+            value: process.env.FRONTEND_URL,
           },
           {
             key: "Access-Control-Allow-Methods",
