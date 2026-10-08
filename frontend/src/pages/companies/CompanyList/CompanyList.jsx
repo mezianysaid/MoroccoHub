@@ -770,7 +770,7 @@ function CompanyList() {
   // fetch companies list using api
   const fetchCompanies = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/companies");
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/companies`);
 
       if (!response.ok) {
         throw new Error(`HTTP error: ${response.status}`);

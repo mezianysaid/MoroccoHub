@@ -106,7 +106,9 @@ function UniversityList() {
   const fetchUniversities = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:3000/api/universities");
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/universities`,
+      );
 
       if (!response.ok) {
         throw new Error(`HTTP error: ${response.status}`);

@@ -174,7 +174,7 @@ function CompanyDetail() {
       setLoading(true);
       try {
         const response = await fetch(
-          `http://localhost:3000/api/companies/${id}`,
+          `${import.meta.env.VITE_API_URL}/companies/${id}`,
         );
         const result = await response.json();
 
