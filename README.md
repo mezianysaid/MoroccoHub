@@ -4,6 +4,18 @@
 
 MoroccoHub is a full-stack web application designed to bring information about Moroccan universities and companies together in one accessible platform. It aims to help users explore educational institutions, discover businesses, and navigate information through a simple, organized interface.
 
+<img width="1887" height="828" alt="Screenshot 2026-10-11 183812" src="https://github.com/user-attachments/assets/9d84af24-56f0-444e-b216-d2a867623180" />
+<img width="1881" height="828" alt="Screenshot 2026-10-11 160802" src="https://github.com/user-attachments/assets/8323a0e8-9719-470a-8d05-0f926f191b7a" />
+<img width="1871" height="818" alt="Screenshot 2026-10-11 160746" src="https://github.com/user-attachments/assets/9b58bae5-f6e6-467b-a8fb-b2fe2fe30955" />
+<img width="1889" height="815" alt="Screenshot 2026-10-11 160730" src="https://github.com/user-attachments/assets/05e7db08-4510-4c3b-b5c7-3ecb452bf39e" />
+<img width="1869" height="817" alt="Screenshot 2026-10-11 160716" src="https://github.com/user-attachments/assets/043c12a2-fe61-4637-b87a-6fa9860f5ca0" />
+<img width="1915" height="826" alt="Screenshot 2026-10-08 172655" src="https://github.com/user-attachments/assets/edab781e-ab9f-45cd-9581-ae7a097cb799" />
+<img width="1899" height="807" alt="Screenshot 2026-10-08 172642" src="https://github.com/user-attachments/assets/db07e8fe-f5c5-479e-9f20-ff47827d4ffd" />
+<img width="1919" height="824" alt="Screenshot 2026-10-08 172629" src="https://github.com/user-attachments/assets/3ab4293c-a762-4364-8a96-f811470f0661" />
+<img width="1880" height="667" alt="Screenshot 2026-09-25 192109" src="https://github.com/user-attachments/assets/6ae22bca-c324-44e8-8df6-6f281efd4d10" />
+<img width="1598" height="678" alt="Screenshot 2026-09-24 190003" src="https://github.com/user-attachments/assets/970cfecc-5a76-48a3-95dd-398f6dfd8aed" />
+<img width="1846" height="817" alt="Screenshot 2026-10-11 183847" src="https://github.com/user-attachments/assets/4e6924a7-7041-474f-bf4f-a2b5f26dec6d" />
+
 
 
 ## ✨ Features
